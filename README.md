@@ -1,2 +1,9 @@
-# Freeform-Dynabot-Pattern_to_selected_targets
-Patterns the active piece and its children to the local origin of each selected piece
+# Freeform_Dynabots
+
+Dynabots can only be used in Geomagic Freeform Plus.
+
+They are sequential lists of "Tasks", tool operations and applicationactions, that can be invoked as automation macros or interactive wizards.
+They are a powerful tool but nowhere close to office macros.
+
+This is a repository of general purpose dynabots.
+Feel free to add yours
