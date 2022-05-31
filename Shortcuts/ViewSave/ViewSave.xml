@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dynabot name="ViewSave">
+<Version>1</Version>
+<Build>56 Thu Nov 19  14:08:25 2020 V2021.0</Build>
+<Command>0</Command>
+<Note>by ASZ</Note>
+<Desc>Creates a new View and opens the rename panel</Desc>
+<Task name="Save View">
+<Value>1</Value>
+<Desc>Store the current view</Desc>
+<Feature>Select_Feature</Feature>
+<ID>33225::0::1</ID>
+</Task>
+<Task name="Manage Saved Views">
+<Value>1</Value>
+<Desc>Renames or deletes saved views</Desc>
+<Feature>Paint_Feature</Feature>
+<ID>33688::0::1</ID>
+</Task>
+</Dynabot>

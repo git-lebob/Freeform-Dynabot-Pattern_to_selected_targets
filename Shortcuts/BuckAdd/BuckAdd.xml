@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dynabot name="BuckAdd">
+<Version>1</Version>
+<Build>50 Thu Jan 23  10:06:48 2020 V2019.2</Build>
+<Command>0</Command>
+<Note>by ASZ</Note>
+<Task name="Memorize/Recall Active Tool">
+<Value>0</Value>
+<Range>[0, 1]</Range>
+<Desc>Memorize then recall the active tool</Desc>
+<Menu>Memorize;Recall</Menu>
+<ID>Dynabot_Feature_Memory::0::7</ID>
+</Task>
+<Task name="Select">
+<Value>1</Value>
+<Desc>Select curves, patches or solids</Desc>
+<Feature>Select_Feature</Feature>
+<ID>Select_Feature::0::2</ID>
+</Task>
+<Task name="Select Clay">
+<Value>1</Value>
+<Desc>Select clay with a set of tools</Desc>
+<Feature>SelectClayMulti_Feature</Feature>
+<ID>SelectClayMulti_Feature::0::2</ID>
+</Task>
+<Task name="Select All">
+<Value>1</Value>
+<Desc>Select all of the clay in the active piece</Desc>
+<Feature>SelectClayMulti_Feature</Feature>
+<ID>4173::SelectClayUI.sxp::1</ID>
+</Task>
+<Task name="Add To Buck">
+<Value>1</Value>
+<Desc>Add selection to buck</Desc>
+<Feature>SelectClayMulti_Feature</Feature>
+<ID>4191::SelectClayUI.sxp::1</ID>
+</Task>
+<Task name="Select">
+<Value>1</Value>
+<Desc>Select curves, patches or solids</Desc>
+<Feature>Select_Feature</Feature>
+<ID>Select_Feature::0::2</ID>
+</Task>
+<Task name="Memorize/Recall Active Tool">
+<Value>1</Value>
+<Range>[0, 1]</Range>
+<Desc>Memorize then recall the active tool</Desc>
+<Menu>Memorize;Recall</Menu>
+<ID>Dynabot_Feature_Memory::0::7</ID>
+</Task>
+</Dynabot>

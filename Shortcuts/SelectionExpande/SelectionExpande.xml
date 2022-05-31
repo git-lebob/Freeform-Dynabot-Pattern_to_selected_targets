@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dynabot name="SelectionExpande">
+<Version>1</Version>
+<Build>56 Thu Nov 19  14:08:25 2020 V2021.0</Build>
+<Command>0</Command>
+<Note>by ASZ</Note>
+<Task name="Expand Object">
+<Value>*</Value>
+<Range>[OBJECT]</Range>
+<Desc>Expand object (specified by value)</Desc>
+<ID>OL_Item_Expand::0::0</ID>
+</Task>
+</Dynabot>

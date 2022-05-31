@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dynabot name="SelectionCollapse">
+<Version>1</Version>
+<Build>56 Thu Nov 19  14:08:25 2020 V2021.0</Build>
+<Command>0</Command>
+<Note>by ASZ</Note>
+<Task name="Collapse Object">
+<Value>*</Value>
+<Range>[OBJECT]</Range>
+<Desc>Collapse object (specified by value)</Desc>
+<Preference>{Dynabot_IgnoreErrors  0}</Preference>
+<ID>OL_Item_Collapse::0::0</ID>
+</Task>
+</Dynabot>
