@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Dynabot name="Pattern_to_selectedPieces">
+<Dynabot name="Pattern_to_selected_Pieces">
 <Version>1</Version>
 <Build>56 Thu Nov 19  14:08:25 2020 V2021.0</Build>
 <Command>0</Command>
 <Desc>Duplicates active Piece and its Children and alligns them to each selected Piece</Desc>
-<Note>by ASZ</Note>
+<Note>by ASZ
+
+
+
+Changelog:
+
+2022-07-04 duplicates will be created with unique name</Note>
 <Group name="program">
 <Expanded>1</Expanded>
 <Group name="start">
-<Group name="memorize targets (M2)">
 <Expanded>1</Expanded>
+<Separator name="Int to String operations not possible. Unique names forced through 'Options...' will be reset at end of this Dynabot -&gt; V2021.0.56">
+</Separator>
+<Task name="Memorize/Recall Preferences">
+<Value>0</Value>
+<Range>[0, 1]</Range>
+<Desc>Memorize then recall the state of all application preferences</Desc>
+<Menu>Memorize;Recall</Menu>
+<ID>Dynabot_Preference_Memory::0::7</ID>
+</Task>
+<Task name="Options">
+<Value>1</Value>
+<Desc>Change program settings</Desc>
+<Preference>{UniqueObjectNames  1}</Preference>
+<Feature>Select_Feature</Feature>
+<ID>33084::0::1</ID>
+</Task>
+<Group name="memorize targets (M2)">
 <Task name="Set Variable">
 <Value>@Dynabot_GetSelectedCount_Piece</Value>
 <Range>[0, 100, 0]</Range>
@@ -31,8 +53,17 @@
 <ID>OL_Item_Deselect_All::0::0</ID>
 </Task>
 </Group>
+<Task name="Set Variable">
+<Value>@Dynabot_GetActivePieceName</Value>
+<Range>[TEXT]</Range>
+<Desc>Define a variable to store a task value</Desc>
+<Note>Start Loop Play</Note>
+<Preference>{Dynabot_VariableName  @name_of_source}</Preference>
+<ID>Dynabot_Variable::0::0</ID>
+</Task>
 </Group>
 <Group name="Loop">
+<Expanded>1</Expanded>
 <Task name="Start Loop Play">
 <Value>@count_of_target_pieces</Value>
 <Range>[1, 100000]</Range>
@@ -67,12 +98,15 @@
 <ID>Dynabot_Variable::0::0</ID>
 </Task>
 <Group name="IF count_of_children &gt; 0 then copy">
+<Expanded>1</Expanded>
 <Task name="Start Loop Play">
 <Value>IF(0 &lt; @count_of_children)</Value>
 <Range>[1, 100000]</Range>
 <Desc>Start of Dynabot playback loop (set loop iterations)</Desc>
 <ID>Dynabot_Start_Loop_Play::0::0</ID>
 </Task>
+<Separator name="Copying only the original source's children will result in missplaced children -&gt; V2021.0.56">
+</Separator>
 <Task name="Copy">
 <Value>1</Value>
 <Desc>Object List : Menu Item</Desc>
@@ -177,6 +211,13 @@
 </Task>
 </Group>
 <Group name="End">
+<Task name="Memorize/Recall Preferences">
+<Value>1</Value>
+<Range>[0, 1]</Range>
+<Desc>Memorize then recall the state of all application preferences</Desc>
+<Menu>Memorize;Recall</Menu>
+<ID>Dynabot_Preference_Memory::0::7</ID>
+</Task>
 <Task name="Select">
 <Value>1</Value>
 <Desc>Select curves, patches or solids</Desc>
